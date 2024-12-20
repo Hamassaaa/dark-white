@@ -1,0 +1,92 @@
+/* General Variables */
+:root {
+    --primary-bg-color: #ffffff;
+    --primary-text-color: #333333;
+    --header-bg-color: #4CAF50;
+    --nav-bg-color: #333333;
+    --nav-link-color: #ffffff;
+    --footer-bg-color: #333333;
+    --footer-text-color: #ffffff;
+    --transition-speed: 0.5s;
+}
+
+/* Dark Mode Variables */
+body.dark-theme {
+    --primary-bg-color: #1b1b1b;
+    --primary-text-color: #f0f0f0;
+    --header-bg-color: #212121;
+    --nav-bg-color: #1b1b1b;
+    --nav-link-color: #4CAF50;
+    --footer-bg-color: #212121;
+    --footer-text-color: #f0f0f0;
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-bg-color);
+    color: var(--primary-text-color);
+    transition: background-color var(--transition-speed), color var(--transition-speed);
+}
+
+header {
+    background-color: var(--header-bg-color);
+    color: var(--primary-text-color);
+    padding: 1rem;
+    text-align: center;
+    transition: background-color var(--transition-speed), color var(--transition-speed);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: var(--nav-bg-color);
+    transition: background-color var(--transition-speed);
+}
+
+nav a {
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 0.75rem 1rem;
+    transition: color var(--transition-speed), background-color var(--transition-speed);
+}
+
+nav a:hover {
+    background-color: var(--primary-text-color);
+    color: var(--primary-bg-color);
+}
+
+main {
+    padding: 2rem;
+    text-align: center;
+}
+
+footer {
+    background-color: var(--footer-bg-color);
+    color: var(--footer-text-color);
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    transition: background-color var(--transition-speed), color var(--transition-speed);
+}
+
+/* Icon Styling */
+#icon {
+    box-shadow: 1px 1px 10px black;
+    border-radius: 50%;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    width: 30px;
+    cursor: pointer;
+    transition: transform 1.5s, filter var(--transition-speed);
+}
+
+#icon:hover {
+    transform: rotate(360deg);
+    filter: brightness(1.2);
+}
