@@ -18,7 +18,7 @@ icon.onclick = function () {
     if (document.body.classList.contains("dark-theme")) {
         icon.src = "/image/moon.png"; // Icon for light mode
     } else {
-        icon.src = "image/sun.webp"; // Icon for dark mode
+        icon.src = "https://github.com/Hamassaaa/dark-white/blob/main/index.html/image/sun.webp"; // Icon for dark mode
     }
 };
 
